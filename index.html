@@ -63,7 +63,7 @@
             }
         });
 
-        $('.minus').click(function(){
+        $('.sub').click(function(){
             num1 = $('#input').val();
             if(num1 == ""){
                 alert("Voer eerst een getal in!");
@@ -71,7 +71,7 @@
             else{
                 $('#numberone').text(num1);
                 $('#input').val("");
-                status = "minus";
+                status = "sub";
             }
         });
 
@@ -84,6 +84,12 @@
                 switch (status){
                     case "plus":
                     result = +num1 + +num2;
+                    alert(result);
+                    $('#input').val("");
+                    $('#numberone').text(""); 
+                    break;
+                    case "sub":
+                    result = +num1 - +num2;
                     alert(result);
                     $('#input').val("");
                     $('#numberone').text(""); 
