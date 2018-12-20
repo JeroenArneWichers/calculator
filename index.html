@@ -2,7 +2,12 @@
 <html lang="en">
 
 <style>
-
+#numberone{
+    background-color: green;
+}
+#results{
+    background-color: yellow;
+}
 </style>
 
 <head>
@@ -37,8 +42,8 @@
 
     <!-- button.btn*15 -->
     <br/>
-    <textarea id="numberone" rows="1" cols="25"></textarea>
-    <textarea id="numbertwo" rows="1" cols="25"></textarea>   
+    <textarea  id="numberone"></textarea><br />
+    <textarea  id="results"></textarea>   
 
     <script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
     <script>
@@ -108,25 +113,29 @@
                 switch (status){
                     case "plus":
                     result = +num1 + +num2;
-                    alert(result);
+                    $('#results').html(result);
+                    //alert(result);
                     $('#input').val("");
                     $('#numberone').text(""); 
                     break;
                     case "sub":
                     result = +num1 - +num2;
-                    alert(result);
+                    $('#results').html(result);
+                    //alert(result);
                     $('#input').val("");
                     $('#numberone').text(""); 
                     break;
                     case "mul":
                     result = +num1 * +num2;
-                    alert(result);
+                    $('#results').html(result);
+                    //alert(result);
                     $('#input').val("");
                     $('#numberone').text(""); 
                     break;
                     case "div":
                     result = +num1 / +num2;
-                    alert(result);
+                    $('#results').html(result);
+                    //alert(result);
                     $('#input').val("");
                     $('#numberone').text(""); 
                     break;
