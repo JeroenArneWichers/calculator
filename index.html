@@ -12,7 +12,6 @@
 
 <body>
     <h1>Rekenmachine</h1>
-    <div class="item item-header">0</div>
     <input id="input" type="number" disabled></input>
     <br/>
     <button class="btn">1</button>
@@ -37,21 +36,63 @@
 
 
     <!-- button.btn*15 -->
-    <br/> 
+    <br/>
+    <textarea id="numberone" rows="1" cols="25"></textarea>
+    <textarea id="numbertwo" rows="1" cols="25"></textarea>   
 
     <script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
     <script>
+        var num1 = null;
+        var num2 = null;
+        var status = null;
+        var result = null;
 
-    $(".btn").click(function(event) {
-    console.log("you clicked: ", this.innerHTML)
-    })
+        $('.btn').click(function(){
+            $('#input').val($('#input').val() + this.innerHTML);
+        });
 
-    $(".btn").click(function(event) {
-    var thingClicked = this.innerHTML
-    console.log("you clicked: ", thingClicked)
-    $(".item-header").html(thingClicked)
-    })
+        $('.add').click(function(){
+            num1 = $('#input').val();
+            if(num1 == ""){
+                alert("Voer eerst een getal in!");
+            }
+            else{
+                $('#numberone').text(num1);
+                $('#input').val("");
+                status = "plus";
+            }
+        });
 
+        $('.minus').click(function(){
+            num1 = $('#input').val();
+            if(num1 == ""){
+                alert("Voer eerst een getal in!");
+            }
+            else{
+                $('#numberone').text(num1);
+                $('#input').val("");
+                status = "minus";
+            }
+        });
+
+        $('#Calc').click(function(){
+            num2 = $('#input').val();
+            if(num2 == ""){
+                alert("Voer het tweede getal in");
+            }
+            else{
+                switch (status){
+                    case "plus":
+                    result = +num1 + +num2;
+                    alert(result);
+                    $('#input').val("");
+                    $('#numberone').text(""); 
+                    break;
+                }
+
+            }
+
+        });
     </script>
 
 </body>
