@@ -75,6 +75,18 @@
             }
         });
 
+        $('.mul').click(function(){
+            num1 = $('#input').val();
+            if(num1 == ""){
+                alert("Voer eerst een getal in!");
+            }
+            else{
+                $('#numberone').text(num1);
+                $('#input').val("");
+                status = "mul";
+            }
+        });
+
         $('#Calc').click(function(){
             num2 = $('#input').val();
             if(num2 == ""){
@@ -90,6 +102,12 @@
                     break;
                     case "sub":
                     result = +num1 - +num2;
+                    alert(result);
+                    $('#input').val("");
+                    $('#numberone').text(""); 
+                    break;
+                    case "mul":
+                    result = +num1 * +num2;
                     alert(result);
                     $('#input').val("");
                     $('#numberone').text(""); 
