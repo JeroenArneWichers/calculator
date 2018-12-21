@@ -1,51 +1,138 @@
 <!doctype html>
 <html lang="en">
 
-<style>
-#numberone{
-    background-color: green;
-}
-#results{
-    background-color: yellow;
-}
-</style>
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rekenmachine Jeroen</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
 <body>
-    <h1>Rekenmachine</h1>
-    <input id="input" type="number" disabled></input>
-    <br/>
-    <button class="btn">1</button>
-    <button class="btn">2</button>
-    <button class="btn">3</button>
-    <button class="add">+</button>
-    <button class="dot">.</button>
-    <br/>
-    <button class="btn">4</button>
-    <button class="btn">5</button>
-    <button class="btn">6</button>
-    <button class="sub">-</button>
-    <button class="mul">*</button>
-    <br/>
-    <button class="btn">7</button>
-    <button class="btn">8</button>
-    <button class="btn">9</button>
-    <button class="div">/</button>
-    <button id="Calc"> = </button>
-    <br/>
-    <button class="btn">0</button>
+    <section id="header">
+        <div class="header-container">
+            <h1>Calculating ease at your fingertips</h1>
+            <h2>From the best way to buy your groceries to decide when to invest in Bitcoin...<br> 
+                Everything is at your fingertips.</h2>
+            <a href="" class="btn-calculate-your-options">Calculate your options</a>
+        </div>
+    </section>
 
+    <section id="quotes">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>"But first some data about people and money...</h1>
+                <h1>For example..."</h1>
+            </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- button.btn*15 -->
-    <br/>
-    <textarea  id="numberone"></textarea><br />
-    <textarea  id="results"></textarea>   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 36rem;">
+                    <img class="card-img-top" src="./img/white-globe-on-a-desk.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">World Poverty</h5>
+                        <p class="card-text">Financial troubles affect people all around the world.</p>
+                        <p>Did you know that...</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">80% of people live on less than 10$ a day.</li>
+                        <li class="list-group-item">More than 80% of people live in countries where the income gap is widening.</li>
+                        <li class="list-group-item">40% of people only have 5% of the worlds income.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 36rem;">
+                    <img class="card-img-top custom-card-img" src="./img/child-poverty.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Poverty's affects on children</h5>
+                        <p class="card-text">Perhaps the most affected group are children.</p>
+                        <p>Did you know that...</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">22,000 children die each day due to poverty.</li>
+                        <li class="list-group-item">28% of all children in developing countries are estimated to be underweight or stunted.</li>
+                        <li class="list-group-item">72 million children of primary school age in the developing world were not in school.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 36rem;">
+                    <img class="card-img-top" src="./img/mental-health.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Poverty and mental health</h5>
+                        <p class="card-text">Side effects of perty are not always clearly seen.</p>
+                        <p>Did you know that...</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">80% of people live on less than 10$ a day.</li>
+                        <li class="list-group-item">More than 80% of people live in countries where the income gap is widening.</li>
+                        <li class="list-group-item">40% of people only have 5% of the worlds income.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
+    <section id="quotes">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>"So now you know...</h1>
+                <h1>Managing your money is important..."</h1>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<section id="calculator">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h1>Rekenmachine</h1>
+                <input id="input" type="number" disabled></input>
+                <br/>
+                <button class="btn btn-dark">1</button>
+                <button class="btn btn-dark">2</button>
+                <button class="btn btn-dark">3</button>
+                <button class="add btn-dark">+</button>
+                <button class="dot btn-dark">.</button>
+                <br/>
+                <button class="btn btn-dark">4</button>
+                <button class="btn btn-dark">5</button>
+                <button class="btn btn-dark">6</button>
+                <button class="sub btn-dark">-</button>
+                <button class="mul btn-dark">*</button>
+                <br/>
+                <button class="btn btn-dark">7</button>
+                <button class="btn btn-dark">8</button>
+                <button class="btn btn-dark">9</button>
+                <button class="div btn-dark">/</button>
+                <button class="btn-dark" id="Calc"> = </button>
+                <br/>
+                <button class="btn btn-dark">0</button>
+
+                <br/>
+                <textarea  id="numberone"></textarea><br />
+                <textarea  id="results"></textarea>   
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <script>
         var num1 = null;
         var num2 = null;
