@@ -78,92 +78,150 @@
     background-size: cover;
     position: relative;
     border-bottom: black 6px solid;
+    text-align: center;
 }
+
+#calculator h1 {
+    margin: 70px 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: black;
+  }
 
 .calculator{
     width: auto;
     height: 600px;
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 37%;
 }
 
 #button1 {
     position: absolute;
-    top: 610px;
-    left: 725px;
+    top: 635px;
+    left: 740px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button2 {
     position: absolute;
-    top: 610px;
-    left: 825px;
+    top: 635px;
+    left: 850px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button3 {
     position: absolute;
-    top: 610px;
-    left: 935px;
+    top: 635px;
+    left: 960px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #buttonadd {
     position: absolute;
-    top: 540px;
-    left: 1050px;
+    top: 552px;
+    left: 1070px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button4 {
     position: absolute;
-    top: 520px;
-    left: 725px;
+    top: 555px;
+    left: 740px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button5 {
     position: absolute;
-    top: 520px;
-    left: 825px;
+    top: 555px;
+    left: 850px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button6 {
     position: absolute;
-    top: 520px;
-    left: 935px;
+    top: 555px;
+    left: 960px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button7 {
     position: absolute;
-    top: 440px;
-    left: 725px;
+    top: 470px;
+    left: 740px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button8 {
     position: absolute;
-    top: 440px;
-    left: 825px;
+    top: 470px;
+    left: 850px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #button9 {
     position: absolute;
-    top: 440px;
-    left: 935px;
+    top: 470px;
+    left: 960px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #buttonsub {
     position: absolute;
-    top: 455px;
-    left: 1050px;
+    top: 470px;
+    left: 1070px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #buttonmul {
     position: absolute;
-    top: 370px;
-    left: 1050px;
+    top: 385px;
+    left: 1070px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #Calc {
     position: absolute;
-    top: 598px;
-    left: 1030px;
+    top: 640px;
+    left: 1067px;
     padding-top: 50px;
     padding-bottom:50px;
     padding-left: 30px;
@@ -172,8 +230,8 @@
 
 #button0 {
     position: absolute;
-    top: 680px;
-    left: 720px;
+    top: 720px;
+    left: 760px;
     padding-top: 10px;
     padding-bottom:10px;
     padding-left: 70px;
@@ -183,14 +241,18 @@
 
 #buttondiv {
     position: absolute;
-    top: 370px;
-    left: 950px;
+    top: 385px;
+    left: 960px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
 #buttondot {
     position: absolute;
-    top: 680px;
-    left: 925px;
+    top: 720px;
+    left: 960px;
     padding-top: 10px;
     padding-bottom:10px;
     padding-left: 30px;
@@ -198,12 +260,42 @@
     border-radius: 50%;
     }
 
+#input {
+    position: absolute;
+    top: 240px;
+    left: 750px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
+#numberone {
+    position: absolute;
+    top: 240px;
+    left: 960px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
+#results {
+    position: absolute;
+    top: 292px;
+    left: 960px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
 
 
 
 #numberone{
-    background-color: green;
+
 }
 #results{
-    background-color: yellow;
+
 }
